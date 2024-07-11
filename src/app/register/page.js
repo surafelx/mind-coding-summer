@@ -12,6 +12,8 @@ export default function Home() {
             className="w-8 h-8 mr-2"
             src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/logo.svg"
             alt="logo"
+            width={100}
+            height={40}
           />
           Flowbite
         </a>

@@ -42,7 +42,7 @@ export default function Home() {
               className="rounded-lg mb-4"
               width="800"
               height="450"
-              src="https://www.youtube.com/embed/live_stream?channel=UCkpoCJVxTgbP4psnN_CEjGQ"
+              src="https://www.youtube.com/embed/tgbNymZ7vqY"
               frameborder="0"
               allowfullscreen
             ></iframe>

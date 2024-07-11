@@ -3,6 +3,7 @@ import Image from "next/image";
 export default function Home() {
   return (
     <>
+      <title>Welcome</title>
       <div class="mt-[120px]"></div>
       <section class="h-full bg-white dark:bg-gray-900">
         <div class="px-4 mx-auto max-w-screen-xl text-center lg:py-8 lg:px-12">
@@ -39,11 +40,13 @@ export default function Home() {
           </p>
           <div className="flex justify-center pb-4">
             <iframe
-              className="rounded-lg mb-4"
+              className="rounded-lg mb-4 shadow-md"
               width="800"
               height="450"
-              src="https://www.youtube.com/embed/live_stream?channel=UCkpoCJVxTgbP4psnN_CEjGQ"
-              frameborder="0"
+              src="https://www.youtube.com/embed/y9_fjKbz0dc?rel=0"
+              frameborder="2"
+              listType="playlist"
+              rel="0"
               allowfullscreen
             ></iframe>
           </div>
@@ -86,5 +89,5 @@ export default function Home() {
         </div>
       </section>
     </>
-  )
+  );
 }
