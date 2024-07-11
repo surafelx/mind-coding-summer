@@ -3,6 +3,8 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import Toast from "./toast";
 import { usePathname } from "next/navigation";
+import Image from "next/image";
+import Script from "next/script";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -77,7 +79,11 @@ export default function RootLayout({ children }) {
                   </svg>
                 </button>
                 <a href="https://flowbite.com" className="flex ms-2 md:me-24">
-                  <img src="./logo.png" className="h-[40px]" />
+                  <Image
+                    src="./logo.png"
+                    className="h-[40px]"
+                    alt="Mind Coding Summer"
+                  />
                 </a>
               </div>
               <div className="flex items-center">
@@ -89,10 +95,6 @@ export default function RootLayout({ children }) {
                     data-dropdown-toggle="dropdown-user"
                   >
                     <span className="sr-only">Open user menu</span>
-                    <script
-                      src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs"
-                      type="module"
-                    ></script>
 
                     <dotlottie-player
                       src="https://lottie.host/42391bb7-98ce-48f4-a763-e2d2bc26729f/540cr9PRkk.json"
@@ -113,7 +115,6 @@ export default function RootLayout({ children }) {
                       data-dropdown-toggle="dropdown-user"
                     >
                       <span className="sr-only">Open user menu</span>
-                      <script src="https://cdn.lordicon.com/lordicon.js"></script>
                       <lord-icon
                         src="https://cdn.lordicon.com/gyevrheg.json"
                         trigger="hover"
@@ -194,7 +195,6 @@ export default function RootLayout({ children }) {
                         : "border-transparent hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300"
                     } group`}
                   >
-                    <script src="https://cdn.lordicon.com/lordicon.js"></script>
                     <lord-icon
                       src={item.icon}
                       trigger="hover"
@@ -213,6 +213,11 @@ export default function RootLayout({ children }) {
         </nav>
         <main>{children}</main>
         <Toast />
+        <Script src="https://cdn.lordicon.com/lordicon.js"></Script>
+        <Script
+          src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs"
+          type="module"
+        ></Script>
       </body>
     </html>
   );

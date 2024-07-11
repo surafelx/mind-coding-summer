@@ -111,7 +111,6 @@ export default function Home() {
                       href="#"
                       class="border-b border-gray-200 dark:border-gray-700 text-sm flex items-center p-2 text-gray-900 dark:text-white "
                     >
-                      <script src="https://cdn.lordicon.com/lordicon.js"></script>
                       {!lesson.locked ? (
                         <lord-icon
                           src="https://cdn.lordicon.com/slgvubxs.json"
@@ -140,8 +139,8 @@ export default function Home() {
                     </a>
                   </li>
 
-                  {lesson.subLessons?.map(({ title, complete }) => (
-                    <li>
+                  {lesson.subLessons?.map(({ title, complete }, index) => (
+                    <li key={index}>
                       <a
                         onClick={() =>
                           setSelectedLesson({
@@ -196,7 +195,7 @@ export default function Home() {
 
                 <p class="mb-4 text-lg font-normal text-gray-500 lg:text-lg sm:px-16 xl:px-48 dark:text-gray-400">
                   Join our 10-week summer program to learn Python from scratch!
-                  With hands-on projects and personalized support, you'll gain
+                  With hands-on projects and personalized support, you will gain
                   the skills needed to become a proficient Python programmer.
                 </p>
                 <div className="flex justify-center pb-4">

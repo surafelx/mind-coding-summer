@@ -34,7 +34,7 @@ export default function Home() {
 
           <p class="mb-4 text-lg font-normal text-gray-500 lg:text-lg sm:px-16 xl:px-48 dark:text-gray-400">
             Join our 10-week summer program to learn Python from scratch! With
-            hands-on projects and personalized support, you'll gain the skills
+            hands-on projects and personalized support, you will gain the skills
             needed to become a proficient Python programmer.
           </p>
           <div className="flex justify-center pb-4">
@@ -86,5 +86,5 @@ export default function Home() {
         </div>
       </section>
     </>
-  );
+  )
 }
