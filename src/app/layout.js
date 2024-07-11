@@ -340,7 +340,7 @@ export default function RootLayout({ children }) {
                       </p>
                     ) : (
                       <p className="text-sm font-light text-gray-500 dark:text-gray-400">
-                        Don't have an account?{" "}
+                        Don&apos;t have an account?{" "}
                         <a
                           onClick={() => setModalType("register")}
                           className="pointer font-medium text-primary-600 hover:underline dark:text-primary-500"
